@@ -12,14 +12,14 @@
     <FileVersion>1.1.0.0</FileVersion>
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <BuildDependsOn>$(BuildDependsOn);AfterBuildMigrated</BuildDependsOn>
-    <Authors>splttingatms</Authors>
+    <Authors>splttingatms, Samael7777</Authors>
     <PackageLicenseUrl>https://github.com/splttingatms/EasyConsole/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/splttingatms/EasyConsole</PackageProjectUrl>
-    <PackageReleaseNotes>
-- Added ability to prompt user for an enumeration type.
-- Added an overload to Output.WriteLine method to avoid needing to escape curly braces in format parameter
-	</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/Samael7777/EasyConsole</PackageProjectUrl>
+    <PackageReleaseNotes>Builded for .NET6 and .NET8	</PackageReleaseNotes>
     <PackageTags>console menu program</PackageTags>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>EasyConsole</Title>
+    <RepositoryUrl>https://github.com/Samael7777/EasyConsole</RepositoryUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>full</DebugType>
