@@ -12,14 +12,16 @@
     <FileVersion>1.1.0.0</FileVersion>
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <BuildDependsOn>$(BuildDependsOn);AfterBuildMigrated</BuildDependsOn>
-    <Authors>Vadim Kutin Samael7777</Authors>
-    <PackageLicenseUrl>https://github.com/splttingatms/EasyConsole/blob/master/LICENSE</PackageLicenseUrl>
+    <Authors>splttingatms, Vadim Kutin Samael7777</Authors>
     <PackageProjectUrl>https://github.com/Samael7777/EasyConsole</PackageProjectUrl>
     <PackageReleaseNotes>Builded for .NET6 and .NET8	</PackageReleaseNotes>
     <PackageTags>console menu program</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>EasyConsole.NetCore</Title>
     <RepositoryUrl>https://github.com/Samael7777/EasyConsole</RepositoryUrl>
+    <PackageId>$(AssemblyName).NetCore</PackageId>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>full</DebugType>
@@ -32,6 +34,16 @@
     <WebDownload Condition="!Exists('nuget.exe')" Filename="nuget.exe" FileUri="https://dist.nuget.org/win-x86-commandline/latest/nuget.exe" />
     <Exec Command="nuget pack EasyConsole.csproj" />
   </Target>
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MSBuildTasks" Version="1.5.0.183">
       <PrivateAssets>all</PrivateAssets>
