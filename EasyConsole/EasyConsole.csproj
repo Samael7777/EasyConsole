@@ -3,22 +3,22 @@
     <ProjectGuid>{DA79BA94-FAD6-462F-89C7-774FE822D594}</ProjectGuid>
     <TargetFrameworks>net6.0;net8.0</TargetFrameworks>
     <AssemblyTitle>EasyConsole</AssemblyTitle>
-    <Company>splttingatms</Company>
-    <Product>EasyConsole</Product>
+    <Company></Company>
+    <Product>EasyConsole.NetCore</Product>
     <Description>EasyConsole is a library to make it easier for developers to build a simple menu interface for a .NET console application</Description>
-    <Copyright>Copyright 2016</Copyright>
+    <Copyright>Copyright 2016 by splttingatms</Copyright>
     <Version>1.1.0.0</Version>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
     <FileVersion>1.1.0.0</FileVersion>
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <BuildDependsOn>$(BuildDependsOn);AfterBuildMigrated</BuildDependsOn>
-    <Authors>splttingatms, Samael7777</Authors>
+    <Authors>Vadim Kutin Samael7777</Authors>
     <PackageLicenseUrl>https://github.com/splttingatms/EasyConsole/blob/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/Samael7777/EasyConsole</PackageProjectUrl>
     <PackageReleaseNotes>Builded for .NET6 and .NET8	</PackageReleaseNotes>
     <PackageTags>console menu program</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Title>EasyConsole</Title>
+    <Title>EasyConsole.NetCore</Title>
     <RepositoryUrl>https://github.com/Samael7777/EasyConsole</RepositoryUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
